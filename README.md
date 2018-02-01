@@ -8,8 +8,11 @@ College in Niceville, Florida, USA.
 
 ## Dr. Juan Merelo
 
-This project relies heavily on portions of Dr.Merelo's Perl 6 book *Learning Perl 6*
-published by ?? and available at many on-line bookstores.  It also uses much
+This project relies heavily on portions of Dr. Merelo's book *Learning to
+Program with Perl 6: First Steps,*
+available at Amazon in a Kindle version as well in a printed version
+published by ??.
+It also uses much
 of his Github repository for producing that book.
 
 ## Jonathan Worthington
