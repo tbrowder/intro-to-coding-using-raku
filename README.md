@@ -10,10 +10,8 @@ College in Niceville, Florida, USA.
 
 This project relies heavily on portions of Dr. Merelo's book *Learning to
 Program with Perl 6: First Steps,*
-available at Amazon in a Kindle version as well in a printed version
-published by ??.
-It also uses much
-of his Github repository for producing that book.
+available at Amazon in a Kindle version as well in a printed version.
+It also uses much of his Github repository for producing that book.
 
 ## Jonathan Worthington
 
