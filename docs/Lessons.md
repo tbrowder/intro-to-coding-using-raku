@@ -10,7 +10,7 @@
 
 ## Lesson 2 (Session 1)
 
-+ 
++ Hello, World
 + student exercises
 
 ## Lesson 3 (Session 2)
