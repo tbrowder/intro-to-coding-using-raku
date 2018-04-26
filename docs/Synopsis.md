@@ -1,12 +1,12 @@
-Category: Computers & Beyond
+## Category: Computers & Beyond
 
-Title: Introduction to Computer Programming for Seniors
+## Title: Introduction to Computer Programming for Seniors
 
-Instructor: Tom Browder
+## Instructor: Tom Browder
 
-Sessions: Three two-hour classes
+## Sessions: Three two-hour classes
 
-Would you like to become familiar with computer programmng to see what
+Would you like to become familiar with computer programming to see what
 your children or grandchildren may be learning in school? Want to
 learn some computer skills used by the engineers of the Internet?
 
