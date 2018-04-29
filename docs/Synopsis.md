@@ -1,10 +1,11 @@
-## Category: Computers & Beyond
+### Category: Computers & Beyond
 
-## Title: Introduction to Computer Programming for Seniors
+### Title: Introduction to Computer Programming for Seniors
 
-## Instructor: Tom Browder
+### Instructor: Tom Browder
 
-## Sessions: Three two-hour classes
+### Sessions: Three two-hour classes
+
 
 Would you like to become familiar with computer programming to see what
 your children or grandchildren may be learning in school? Want to
@@ -30,8 +31,9 @@ better).
 Note you may not recognize some of the terms used above, but they will
 become second nature to you before the course is over.
 
-The primary reference for this course is the book "Learning to Program
-with Perl 6: First Steps" by Dr. Juan J.  Merelo (available from
-on-line booksellers in eBook and paperback formats).  Other resources
-include the Perl 6 website at <https://perl6.org> which has the
-official documentation of the Perl 6 programming language.
+The primary reference for this course is the book "Perl 6
+Introduction," by Naoum Hankache, found on-line at
+<http://perl6intro.com/>. (A PDF copy of the book is available from
+the instructor as a PDF file.)  Other resources include the Perl 6
+website at <https://perl6.org> which has the official documentation of
+the Perl 6 programming language.
