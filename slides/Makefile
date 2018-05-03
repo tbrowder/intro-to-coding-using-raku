@@ -38,9 +38,9 @@ ANSWERS =
 PRODS = $(LESSONS) $(PROBS) $(ANSWERS)
 
 COMMON +=
-COMMON += src/inc/common*md
-COMMON += src/inc/headers.md
-COMMON += src/inc/background.md
+COMMON += src/common*md
+COMMON += src/headers.md
+COMMON += src/background.md
 
 PDFS  = $(patsubst %.md, otp/%.pdf, $(PRODS))
 pdocs = $(patsubst %.md, src/%.pdoc, $(PRODS))
@@ -56,26 +56,25 @@ list-prods:
 	@echo PDF Products:
 	@echo ------------
 	@-ls -1 otp/*.pdf
-	@echo
 
-src/%.pdoc :: src/%.md $(COMMON) src/make-pdoc-from-md.p6
+src/%.pdoc : src/%.md $(COMMON) src/make-pdoc-from-md.p6
 	@echo PDF Source:
 	@echo ----------
 	@-ls -1 src/*.md
 	( cd src ; ./make-pdoc-from-md.p6 -i=$(<) )
 
 fake-src/%.pdoc : src/%.pdoc
-	-cp $< $@
+	@-cp $< $@
 
 fake-src/%.tex : fake-src/%.pdoc $(MD2TEX)
 	$(PERL) $(MD2TEX) $< $@
 	$(PERL) -pi.bak -e "s/\(FIXUP\)//g"   $@
 	$(PERL) -i.bak $(BREAK)               $@
-	-rm $(trash)
+	@-rm $(trash)
 
 otp/%.pdf : fake-src/%.tex
 	$(PDFLATEX) -output-directory=otp $<
-	-rm $(trash)
+	@-rm $(trash)
 
 #.PHONY: deliver
 #deliver:
@@ -87,28 +86,28 @@ otp/%.pdf : fake-src/%.tex
 
 .PHONY: clean
 clean:
-	(cd otp; rm -f *.dvi ; rm -f *.aux ; rm -f *.out ; \
+	( cd otp; rm -f *.dvi ; rm -f *.aux ; rm -f *.out ; \
 	            rm -f *.nav ; rm -f *.snm ; rm -f *.ps ;  \
 	            rm -f *.bak ; rm -f *.vrb ; rm -f *.tex ; \
 	            rm -f *.toc ; rm -f *.html ; rm -f *.log )
-	(cd src; rm -f *.dvi ; rm -f *.aux ; rm -f *.out ; \
+	( cd src; rm -f *.dvi ; rm -f *.aux ; rm -f *.out ; \
 	            rm -f *.nav ; rm -f *.snm ; rm -f *.ps ;  \
 	            rm -f *.bak ; rm -f *.vrb ; rm -f *.tex ; \
 	            rm -f *.toc ; rm -f *.html ; rm -f *.log )
 
 realclean: clean
-	(cd otp; rm -f *.log ; rm -f *.pdf )
-	(cd src; rm -f *.pdoc )
+	( cd otp; rm -f *.log ; rm -f *.pdf )
+	( cd src; rm -f *.pdoc )
 
 distclean: realclean
 
-trash  = $(patsubst %, otp/%.log, $(PRODS))
-trash += $(patsubst %, otp/%.aux, $(PRODS))
-trash += $(patsubst %, otp/%.dvi, $(PRODS))
-trash += $(patsubst %, otp/%.snm, $(PRODS))
-trash += $(patsubst %, otp/%.out, $(PRODS))
-trash += $(patsubst %, otp/%.nav, $(PRODS))
-trash += $(patsubst %, otp/%.vrb, $(PRODS))
-trash += $(patsubst %, otp/%.toc, $(PRODS))
+trash  = $(patsubst %.md, otp/%.log, $(PRODS))
+trash += $(patsubst %.md, otp/%.aux, $(PRODS))
+trash += $(patsubst %.md, otp/%.dvi, $(PRODS))
+trash += $(patsubst %.md, otp/%.snm, $(PRODS))
+trash += $(patsubst %.md, otp/%.out, $(PRODS))
+trash += $(patsubst %.md, otp/%.nav, $(PRODS))
+trash += $(patsubst %.md, otp/%.vrb, $(PRODS))
+trash += $(patsubst %.md, otp/%.toc, $(PRODS))
 trash += src/*.bak src/*~
 trash += fake-src/*.bak
