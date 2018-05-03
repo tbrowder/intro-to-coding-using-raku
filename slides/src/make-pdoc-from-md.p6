@@ -65,7 +65,7 @@ say "Working file '$infile'...";
     my $ifil = '';
     my $headers = False;
     # look for insertion files (<!-- insert-file <file name> -->
-    if $line ~~ m/  ^ \s* '<!--' \s* 'insert-file' \s+ (<[\w\.\-]>+) \s* '-->' \s* $ / {
+    if $line ~~ m/  ^ \s* '<!--' \s* 'insert-file' \s+ (<[\w\/\.\-]>+) \s* '-->' \s* $ / {
       say "DEBUG: found insertion line for file '$0'";
       $ifil = $0;
       $headers = True if $ifil ~~ /headers|closer/;

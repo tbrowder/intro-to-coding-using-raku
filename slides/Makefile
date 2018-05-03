@@ -38,9 +38,9 @@ ANSWERS =
 PRODS = $(LESSONS) $(PROBS) $(ANSWERS)
 
 COMMON +=
-COMMON += src/common*md
-COMMON += src/headers.md
-COMMON += src/background.md
+COMMON += src/inc/common*md
+COMMON += src/inc/headers.md
+COMMON += src/inc/background.md
 
 PDFS  = $(patsubst %.md, otp/%.pdf, $(PRODS))
 pdocs = $(patsubst %.md, src/%.pdoc, $(PRODS))
@@ -61,7 +61,7 @@ src/%.pdoc : src/%.md $(COMMON) src/make-pdoc-from-md.p6
 	@echo PDF Source:
 	@echo ----------
 	@-ls -1 src/*.md
-	( cd src ; ./make-pdoc-from-md.p6 -i=$(<) )
+	( cd src ; ./make-pdoc-from-md.p6 -i=$(<) --debug )
 
 fake-src/%.pdoc : src/%.pdoc
 	@-cp $< $@
