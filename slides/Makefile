@@ -12,7 +12,8 @@ PANDOC   = pandoc
 PDFLATEX = pdflatex
 
 LESSONS =
-LESSONS += lesson-1.md
+LESSONS += course-overview.md
+#LESSONS += lesson-1.md
 #LESSONS += lesson-2.md
 #LESSONS += lesson-3.md
 #LESSONS += lesson-4.md
@@ -96,7 +97,7 @@ clean:
 	            rm -f *.toc ; rm -f *.html ; rm -f *.log )
 
 realclean: clean
-	( cd otp; rm -f *.log ; rm -f *.pdf )
+	( cd otp; rm -f *.pdf )
 	( cd src; rm -f *.pdoc )
 
 distclean: realclean
