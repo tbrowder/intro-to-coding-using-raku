@@ -24,7 +24,9 @@ for various courses. Some modifications have been made to suit this author.
 ## Other Perl 6 authors referenced:
 
 - Andrew Shitov
-- Moritz Lentz
-- Laurent
+     - *Perl 6 at a Glance*
+- Laurent Rosenfeld, 
+- Moritz Lenz
+- Ken Youens-Clark
 - Brian D. Foy
-
+- Gabor Szabo
