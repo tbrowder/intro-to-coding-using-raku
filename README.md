@@ -1,7 +1,7 @@
 # An introduction to computer programming using Perl 6
 
-This repository contains materials for a planned Community Education course
-to be presented during the fall 2018 semester at the Northwest Florida State
+This repository contains materials for a Community Education course
+presented during the fall 2018 semester at the Northwest Florida State
 College in Niceville, Florida, USA.
 
 # CREDITS
@@ -11,10 +11,20 @@ College in Niceville, Florida, USA.
 This project relies heavily on portions of Dr. Merelo's book *Learning to
 Program with Perl 6: First Steps,*
 available at Amazon in a Kindle version as well in a printed version.
-It also uses much of his Github repository for producing that book.
+A copy of the book, bought from Amazon, will be provided for each student (who will
+use it for the class and who will have the opportunity to buy the book
+from the instructor).
 
 ## Jonathan Worthington
 
 Jonathan is the current lead developer of Rakudo Perl 6 and he contributes greatly to the Perl community.
 The slides are produced using the tools put together by him to produce his slides
 for various courses. Some modifications have been made to suit this author.
+
+## Other Perl 6 authors referenced:
+
+- Andrew Shitov
+- Moritz Lentz
+- Laurent
+- Brian D. Foy
+
