@@ -25,8 +25,14 @@ for various courses. Some modifications have been made to suit this author.
 
 - Andrew Shitov
      - *Perl 6 at a Glance*
-- Laurent Rosenfeld, 
+     - *Perl 6 Deep Dive*
+- Laurent Rosenfeld
+     - *Think Perl 6: How to Think Like a Computer Scientist*
 - Moritz Lenz
+     - *Perl 6 Fundamentals*
+     - *Parsing with Perl 6 Regexes and Grammars*
 - Ken Youens-Clark
+     - *Metagenomics*
 - Brian D. Foy
-- Gabor Szabo
+     - *Learning Perl 6*
+
